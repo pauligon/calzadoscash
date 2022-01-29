@@ -14,13 +14,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
     <title>CASH</title>
+    <!--BOOTSTRAP CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--css-->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header class="encabezado">
         <nav class="navegador">
-            <h1>CASH calzados</h1>
+            <h1>CASH</h1>
             <ul class="navegadorItems">
                 <li><a href="./index.html" class="navegadorItemsLi">Home</a></li>
                 <li><a href="./paginas/quienesomos.html" class="navegadorItemsLi">Nosotros</a></li>
@@ -35,14 +37,14 @@
             <img src="./imagenes/encabezado.jpg" alt="imagen portada">
         </nav>
     </header>
-    <main class="cuerpo">
+    <main class="cuerpo container">
         <h2 id="titulo"> DESTACADOS <i class="fas fa-star fa-xs"></i></h2>
-        <div class="destacados">
-            <img src="./imagenes/sandaliaverde.jpg" alt="sandalia verde con abrojo" class="fotosDestacadas">
-            <img src="./imagenes/sandaliacordon.jpg" alt="sandalia acordonada" class="fotosDestacadas">
-            <img src="./imagenes/sandaliatrenzada.jpg" alt="sandalia trenzada" class="fotosDestacadas">
-            <img src="./imagenes/sandaliaplataforma.jpg" alt="sandalia negra con plataforma" class="fotosDestacadas">
-            <img src="./imagenes/alpargata.jpg" alt="alpargata negra con tachas" class="fotosDestacadas">
+        <div class="destacados row">
+            <img src="./imagenes/sandaliaverde.jpg" alt="sandalia verde con abrojo" class="fotosDestacadas col-sm-12 col-md-6 col-lg-8">
+            <img src="./imagenes/sandaliacordon.jpg" alt="sandalia acordonada" class="fotosDestacadas col-sm-12 col-md-6 col-lg-8">
+            <img src="./imagenes/sandaliatrenzada.jpg" alt="sandalia trenzada" class="fotosDestacadas col-sm-12 col-md-6 col-lg-8 ">
+            <img src="./imagenes/sandaliaplataforma.jpg" alt="sandalia negra con plataforma" class="fotosDestacadas col-sm-12 col-md-6 col-lg-8">
+            <img src="./imagenes/alpargata.jpg" alt="alpargata negra con tachas" class="fotosDestacadas col-sm-12 col-md-6 col-lg-8">
         </div>
     </main>
     <footer class="bottom">
@@ -70,6 +72,10 @@
         </ul>
     </footer>
 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
 
