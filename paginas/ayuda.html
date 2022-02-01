@@ -22,40 +22,66 @@
 </head>
 <body>
     <header class="encabezado">
-        <nav class="navegador">
-            <h1>CASH</h1>
-            <ul class="navegadorItems">
-                <li><a href="../index.html" class="navegadorItemsLi">Home</a></li>
-                <li><a href="../paginas/quienesomos.html" class="navegadorItemsLi">Nosotros</a></li>
-                <li class="submenuItems"> Shop
-                    <ul class="submenu">
-                        <a href="../paginas/coleccion.html">Coleccion Primavera/Verano</a>
-                    </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><h1>CASH</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav w-100 justify-content-end">
+                <li class="nav-item">
+                <a class="nav-link active fs-6" aria-current="page" href="../index.html">Home</a>
                 </li>
-                <li><a href="../paginas/ayuda.html" class="navegadorItemsLi" >Ayuda</a></li>
-                <li><a href="../paginas/trabajaconnosotros.html" class="navegadorItemsLi">Trabaja con nosotros</a></li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6" href="./quienesomos.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6" href="../paginas/ayuda.html">Ayuda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6" href="../paginas/trabajaconnosotros.html">Trabaja con nosotros</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link fs-6 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Shop
+                </a>
+                <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item fs-6 w-100" href="../paginas/coleccion.html">Primavera/Verano</a></li>
+                    <li><a class="dropdown-item fs-6 w-100" href="../paginas/coleccion.html">Sale</a></li>
+                    <li><a class="dropdown-item fs-6 w-100" href="../paginas/coleccion.html">Nueva Temporada</a></li>
+                </ul>
+                </li>
             </ul>
+            </div>
+        </div>
         </nav>
     </header>
     </div>
     <main class="cuerpo container">
-        <div id="iconos row">
-            <i class="far fa-question-circle fa-3x col-4"></i>
-            <i class="fas fa-store-alt fa-3x col-4"></i>
-            <i class="fas fa-shipping-fast fa-3x col-4"></i>
+        <div class="card-group">
+            <div class="card">
+                <img src="../imagenes/icono preguntas.png" class="card-img-top w-50 m-auto mt-1" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title m-auto text-center">¿COMO COMPRO DESDE LA PÁGINA?</h5>
+                    <p class="card-text m-auto text-center mt-1">Para realizar compras desde nuestra página, debes seleccionar en el menu principal, la opción SHOP, dentro de la sección vas a encontrar todos nuestros productos pertenecientes a la nueva colección y ahí podrás seleccionar el producto que estas buscando</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../imagenes/icono store.jpg" class="card-img-top w-50 m-auto mt-1" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title m-auto text-center">SUCURSALES</h5>
+                    <p class="card-text m-auto text-center mt-1">Vas a poder encontrar 2 de nuestras sucursales, CASH Elegance ubicada en Libertad 36, donde vas a encontrar los ultimos modelos y novedades de cada temporada. Y CASH urban ubicada en Velez Sarsfield 380, donde vas a encontrar un estilo y calzado para cada miembro de la familia</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../imagenes/icono envio.png" class="card-img-top w-50 m-auto mt-1" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title m-auto text-center">ENVIOS Y FORMAS DE PAGO</h5>
+                    <p class="card-text m-auto text-center mt-1">Una vez aprobada la compra, se enviará el pedido por un canal de distribución con una demora de hasta 15 días desde realizada la compra.</p>
+                </div>
+            </div>
         </div>
-        <div class="preguntas row">
-            <h2 id="tituloPreg" class="col-2">¿COMO COMPRO DESDE LA PÁGINA?</h2>
-            <h3 class="col-2">Para realizar compras desde nuestra página, debes seleccionar en el menu principal, la opción SHOP, dentro de la sección vas a encontrar todos nuestros productos pertenecientes a la nueva colección y ahí podrás seleccionar el producto que estas buscando</h3>
-        </div>
-        <div class="sucursales row">
-            <h2 id="tituloSucursal" class="col-2">SUCURSALES</h2>
-            <h3 class="col-2">Vas a poder encontrar 2 de nuestras sucursales, CASH Elegance ubicada en Libertad 36, donde vas a encontrar los ultimos modelos y novedades de cada temporada. Y CASH urban ubicada en Velez Sarsfield 380, donde vas a encontrar un estilo y calzado para cada miembro de la familia</h4>
-        </div>
-        <div class="formaEnvio row">
-            <h2 id="tituloEnvio" class="col-2">ENVIOS Y FORMAS DE PAGO</h2>
-            <h3 class="col-2">Una vez aprobada la compra, se enviará el pedido por un canal de distribución con una demora de hasta 15 días desde realizada la compra. Los pagos pueden realizarse con cualquier tarjeta de debito o crédito o por rapipago/ pagofácil imprimiendo el cupón de la compra.</h3>
-    </div>
     </main>
     <footer class="bottom">
     <div id="redes"> 
