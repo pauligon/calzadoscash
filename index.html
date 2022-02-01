@@ -21,31 +21,102 @@
 </head>
 <body>
     <header class="encabezado">
-        <nav class="navegador">
-            <h1>CASH</h1>
-            <ul class="navegadorItems">
-                <li><a href="./index.html" class="navegadorItemsLi">Home</a></li>
-                <li><a href="./paginas/quienesomos.html" class="navegadorItemsLi">Nosotros</a></li>
-                <li class="submenuItems"> Shop
-                    <ul class="submenu">
-                        <a href="./paginas/coleccion.html">Coleccion Primavera/Verano</a>
-                    </ul>
-                </li>
-                <li><a href="./paginas/ayuda.html" class="navegadorItemsLi" >Ayuda</a></li>
-                <li><a href="./paginas/trabajaconnosotros.html" class="navegadorItemsLi">Trabaja con nosotros</a></li>
+      <nav class="navbar navbar-expand-lg navbar-light bg">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"><h1>CASH</h1></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active fs-6" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6" href="./paginas/quienesomos.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6" href="./paginas/ayuda.html">Ayuda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6" href="./paginas/trabajaconnosotros.html">Trabaja con nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link fs-6 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Shop
+                </a>
+                <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item fs-6 w-100" href="./paginas/coleccion.html">Primavera/Verano</a></li>
+                  <li><a class="dropdown-item fs-6 w-100" href="./paginas/coleccion.html">Sale</a></li>
+                  <li><a class="dropdown-item fs-6 w-100" href="./paginas/coleccion.html">Nueva Temporada</a></li>
+                </ul>
+              </li>
             </ul>
-            <img src="./imagenes/encabezado.jpg" alt="imagen portada">
-        </nav>
-    </header>
-    <main class="cuerpo container">
-        <h2 id="titulo"> DESTACADOS <i class="fas fa-star fa-xs"></i></h2>
-        <div class="destacados row">
-            <img src="./imagenes/sandaliaverde.jpg" alt="sandalia verde con abrojo" class="fotosDestacadas col-sm-12 col-md-6 col-lg-8">
-            <img src="./imagenes/sandaliacordon.jpg" alt="sandalia acordonada" class="fotosDestacadas col-sm-12 col-md-6 col-lg-8">
-            <img src="./imagenes/sandaliatrenzada.jpg" alt="sandalia trenzada" class="fotosDestacadas col-sm-12 col-md-6 col-lg-8 ">
-            <img src="./imagenes/sandaliaplataforma.jpg" alt="sandalia negra con plataforma" class="fotosDestacadas col-sm-12 col-md-6 col-lg-8">
-            <img src="./imagenes/alpargata.jpg" alt="alpargata negra con tachas" class="fotosDestacadas col-sm-12 col-md-6 col-lg-8">
+          </div>
         </div>
+      </nav>
+    </header>
+    <main class="cuerpo container-fluid">
+      <section class="container-fluid" id="portada">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <img class="fotoEncabezado img-fluid w-100 mt-2" src="./imagenes/fondo.jpg" alt="foto portada zapatos playa">
+          </div>
+          <div class="col-12 col-lg-6 contenedor">
+            <img class="img-fluid w-100 fotoLiquidacion mt-2" src="./imagenes/verano.jpg" alt="foto producto mujer en la arena">
+            <h2 class="textoLiquidacion text-sm-center">SUMMER SALE</h2>
+        </div>
+        <section>
+          <h2 id="titulo">DESTACADOS</h2>
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./imagenes/sandaliatachas.jpg" class="d-block w-100 mt-0" alt="sandalia cerrada con tachas">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/sandaliaverde.jpg" class="d-block w-100 mt-0" alt="sandalia verde">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/alpargata.jpg" class="d-block w-100 mt-0" alt="alpargata negra con tachas">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </section>
+        <!--TARJETAS-->
+      <section>
+        <h2 class="text-center m-auto mb-4 tituloTarjetas">DESCUBRÍ MAS</h2>
+        <div class="card-group row">
+          <div class="card mb-4 border-0">
+            <img src="./imagenes/moda.jpg" class="card-img-top w-100 h-75 m-auto" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">NOVEDADES</h5>
+              <p class="card-text">Registrate en nuestra página y enterate antes que nadie todas las novedades de nuestras tiendas.</p>
+            </div>
+          </div>
+          <div class="card mb-4 border-0">
+            <img src="./imagenes/tendencias.jpg" class="card-img-top w-100 h-75 m-auto" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">TENDENCIAS</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+          <div class="card mb-4 border-0">
+            <img src="./imagenes/foto portada zapas.jpg" class="card-img-top w-100 h-75 m-auto" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">NUEVA COLECCIÓN</h5>
+              <p class="card-text">Registrate en nuestra página y enterate antes que nadie todas las novedades de nuestras tiendas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="bottom">
         <div id="redes"> 
@@ -60,15 +131,15 @@
             </a>
         </div>
         <div id="textoFooter">
-            <p>Horarios: Lunes a Sabados de 9 a 13 y de 17 a 21</p>
-            <p>Dirección: Libertad 36, Rio Tercero</p>
+            <p class="text-center">Horarios: Lunes a Sabados de 9 a 13 y de 17 a 21</p>
+            <p class="text-center">Dirección: Libertad 36, Rio Tercero</p>
         </div>
-        <ul class="seccionesFooter">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./paginas/quienesomos.html">Nosotros</a></li>
-            <li><a href="./paginas/coleccion.html">Shop</a></li>
-            <li><a href="./paginas/ayuda.html">Ayuda</a></li>
-            <li><a href="./paginas/trabajaconnosotros.html">Trabaja con nosotros</a> </li>
+        <ul class="seccionesFooter fs-3">
+            <li class="itemsFooter"><a href="./index.html">Home</a></li>
+            <li class="itemsFooter"><a href="./paginas/quienesomos.html">Nosotros</a></li>
+            <li class="itemsFooter"><a href="./paginas/coleccion.html">Shop</a></li>
+            <li class="itemsFooter"><a href="./paginas/ayuda.html">Ayuda</a></li>
+            <li class="itemsFooter"><a href="./paginas/trabajaconnosotros.html">Trabaja con nosotros</a> </li>
         </ul>
     </footer>
 
