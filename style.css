@@ -3,7 +3,7 @@
     margin: 0;
 
 }
-
+/*APLICANDO GRID*/
 body{
     display: grid;
     grid-template-areas:
@@ -26,106 +26,47 @@ body{
     flex-direction: column;
     grid-area:cabeza;
 }
-.navegador{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: #DBECC6;
-    width: 100%;
-    flex-wrap: wrap;
-}
 
-.navegador h1{
-    flex-wrap: wrap;
-    float: left;
-    width: 100%;
-    font-size: 400%;
-    font-family: Arial, Helvetica, sans-serif;
-    color:#4B5700;
-}
-
-.navegador h1:hover{
-    color:#FCF7FC;
-}
-
-.navegadorItems{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    font-family:'Merriweather', serif;
-    justify-content: center;
-    color: #BFB8FF;
-
-}
-
-.navegadorItemsLi{
-    text-decoration: none;
-    color:#4B5700;
-    margin-left: 10px;
-    margin-bottom: 5px;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Merriweather', serif;
-    font-size: 20px;
-    margin-top: 0;
-    margin-right: 10px;
-    transition: font-size, scale 0,5s;
-}
-
-.navegadorItems, a:hover{
-    color: #42194d73 ;
-    font-size: 24px;
-    scale:(2,2);
-}
-
-
-.navegadorItems li{
-    list-style: none;
-}
-
-.submenu,li{
-    display: block;
-}
-
-.submenu{
-    background-color:#dbecc694 ;
-    width: 300px;
-    position: absolute;
-    left: 0;
-    display: none;
-}
-
-.submenuItems{
+/*FOTOS MAIN CON TEXTO ADENTRO*/
+.contenedor{
     position: relative;
-    color: #4B5700;
-    margin-right: 7px;
-    margin-left: 11px;
-    margin-bottom: 0%;
-    font-size: 20px;
-    transition: font-size, scale 0,5s;
+    display: inline-block;
+    text-align: center;
 }
 
-.submenuItems:hover{
-    color: #42194d73;
-    font-size: 24px;
-    scale: (2,2);
-
+.textoLiquidacion{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    font-family: 'Merriweather', serif;
+    font-size: 300%;
+    font-weight: bolder;
+    color: #9d938e;
+    text-decoration: underline;
 }
 
-.submenuItems:hover .submenu{
-    display: block;
+/*background menu*/
+.bg{
+    background-color: #ddd1c7;
 }
 
-.navegador img{
-    width: 100%;
+/*navegador header*/
+.navbar-brand h1{
+    font-size: 270%;
+    color: #6b3837;
 }
+
+.navbar-brand h1:hover{
+    color: #9d938e;
+}
+
+
 /*finheader*/
 
-/*main*/
-
+/*main index*/
+/*GRID*/
 .cuerpo{
     display: flex;
     flex-wrap: wrap;
@@ -134,80 +75,73 @@ body{
     margin-top:65px;
     grid-area: cuerpo;
 }
-
-
+/*FIN GRID ESTRUCTURA*/
+/* INDEX CARROUSEL*/
 #titulo{
     display:flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    font-size: 340%;
-    font-family: 'Merriweather', serif;
+    font-size: 450%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding-top: 2%;
-    color:#65606d;
-    margin-top: 0;
+    color: #6b3837;
+    font-weight: lighter;
+    margin-top: 20%;
     transition: all 1s;
+    margin-bottom: 0;
 }
 
 #titulo:hover{
     font-size: 390% ;
-    color:#d1d581de ;
+    color: #9d938e ;
 }
 
-.destacados{
-    display: flex;
-    overflow-x: scroll;
-    margin: auto;
-}
-
-.destacados:-webkit-scrollbar {
-    width: 5px;
-    background:#D1EEFF ; 
-    border-radius: 30px;      
-    background-color:#BFB8FF ;    
-    border: 6px solid #43414634 ;
-    margin-bottom: 10px;
-}
-.fotosDestacadas{
-    width: 30%;
-    height: 60%;
-    object-fit: cover;
-    margin: 8px;
-    transform: scale(1,1);
+/*INDEX CARDS*/
+.tituloTarjetas{
+    font-size: 390%;
+    font-weight: lighter;
+    color: #6b3837;
     transition: all 1s;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.tituloTarjetas:hover{
+    color: #9d938e;
+
 }
 
-.fotosDestacadas:hover{
-    height: 80% ;
+.bordeTarjeta{
+    gap: 10%;
 }
 
-.fotosQuienesSomos{
-    object-fit: cover;
-    width: 100%;
-    height: 70%;
-}
+/*fin index*/
 
-.contenedor,h2{
-    font-size: 28px;
-    font-family:'Merriweather', serif;
-    color:#000000 ;
-    margin-bottom: 2px;
-}
-
-/*finmain*/
-
-/*footer*/
-
+/*FOOTER GENERAL*/
+/*GRID ESTRUCTURA*/
 .bottom{
     display: flex;
     justify-content: space-around;
     width: 100%;
-    background-color: #DBECC6 ;
+    background-color: #ddd1c7;
     font-size: 30px;
     font-family:'Merriweather', serif ;
     align-items: center;
     grid-area: pie;
+}
+/*FIN GRID ESTRUCTURA*/
+
+.itemsFooter{
+    list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 65%;
+    transition: all 0,5s;
+}
+
+.itemsFooter:hover{
+    color: #6b3837;
+    font-size: 70%;
+
 }
 
 #redes{
@@ -220,38 +154,45 @@ body{
 }
 
 #facebook{
-    color: #4B5700;
+    color: #6b3837;
     font-size: 80%;
+    transition: all 0,5s;
 }
 
 #facebook:hover{
     color:#3b5998;
+    font-size: 85%;
 }
 
 #instagram{
-    color: #4B5700;
+    color: #6b3837;
     font-size: 80%;
+    transition: all 0,5s;
 }
 
 #instagram:hover{
-    color:#833AB4;
+    color:#833AB4;    
+    font-size: 85%;
 }
 
 #whatsapp{
-    color:#4B5700;
+    color: #6b3837;
     font-size: 80%;
+    transition: all 0,5s;
 }
 
 #whatsapp:hover{
-    color: #25D366;
+    color: #25D366;    
+    font-size: 85%;
 }
 
 #textoFooter{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #4B5700;
-    font-size: 80%;
+    color: #6b3837;
+    font-size: 60%;
+    margin-bottom: 0;
 }
 
 .seccionesFooter{
@@ -262,8 +203,8 @@ body{
 
 .seccionesFooter,li,a{
     text-decoration: none;
-    color: #4B5700;
-    font-size: 90%;
+    color: #6b3837;
+    font-size: 80%;
     flex-direction: column;
     margin-bottom: 8px;
     margin-top: 10px;
@@ -279,10 +220,10 @@ body{
 #tituloHistoria{
     display: flex;
     justify-content: space-around;
-    font-size: 400%;
-    font-family:'Merriweather', serif;
-    color: #615d5ddc;
-    font-weight: lighter;
+    font-size: 450%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #6b3837;
+    font-weight:normal;
     background: #FFFFFF;
     text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
 }
@@ -300,8 +241,8 @@ body{
     margin-top: 5px;
     margin-bottom: 0;
     margin: 0;
-    -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #4d535a, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #4d4f52, 5px 5px 15px 5px rgba(0,0,0,0);
+    -webkit-box-shadow: inset -1px 3px 8px 5px #676862, 2px 5px 16px 0px #4d535a, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: inset -1px 3px 8px 5px #676862, 2px 5px 16px 0px #4d4f52, 5px 5px 15px 5px rgba(0,0,0,0);
     margin: 3%;
 }
 
@@ -312,10 +253,9 @@ body{
     font-size: 130%;
     width: 100%;
     gap: 1%;
-    font-family:'Merriweather', serif; 
-    font-weight: inherit;
-    color: #676862;
-    font-style:inherit;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-weight:normal;
+    color: #9d938e;
     margin-top: 3px;
 }
 
@@ -349,10 +289,9 @@ body{
     display: flex;
     justify-content: center;
     font-size: 300%;
-    background-color: #2525255e;
     align-items: center;
-    font-family:'Merriweather', serif; ;
-    color: #494944;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    color: #6b3837;
 
 }
 
@@ -422,9 +361,7 @@ body{
     padding: 2px;
     border: none;
     color: #BFB8FF;
-    background-image: url(./imagenes/frentelocal.jpeg);
-    background-color: transparent;
-    background-repeat: no-repeat;
+    background-color: #9d938e;
     background-position: center;
     background-size: cover;
     width: 100vh;
@@ -491,7 +428,7 @@ body{
 }
 
 #botonform{
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: #EEEEEE;
     border: none;
 }
@@ -544,154 +481,30 @@ pre{
     margin-bottom: 10px;
 }
 
-.preguntas{
-    display: flex;
-    margin-bottom: 10%;
-    flex-direction: column;
-    justify-content: flex-start;
-    border: #88D7AD 3px solid;
-    border-radius: 10px;
-    width: 50vh;
-    transition: all 0,5s;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-}
-
-.preguntas:hover{
-    border:none;
-    background-color:#BCD581 ;
-    width: 80hv;
-}
-
-
-#tituloPreg{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    color: #4b57008e ;
-    align-items: center;
-}
-
-#iconos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    color: #88D7AD;
-    gap: 400px;
-    width: 100%;
-}
-
-
-
-.sucursales{
-    display: flex;
-    margin-bottom: 10%;
-    justify-content: center;
-    flex-direction: column;
-    border: #88D7AD 3px solid;
-    border-radius: 10px;
-    width: 50vh;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-    transition: all 1s;
-}
-
-.sucursales:hover{
-    width: 80vh;
-    background-color: #BCD581;
-    border:none
-}
-
-#tituloSucursal{
-    display: flex;
-    font-size: 30px;
-    color: #4b57008e;
-    align-items: center;
-}
-
-.formaEnvio{
-    display: flex;
-    margin-bottom: 10%;
-    justify-content: flex-end;
-    flex-direction: column;
-    border: #88D7AD 3px solid;
-    border-radius: 10px;
-    width: 50vh;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-    transition: all 1s;
-}
-.formaEnvio:hover{
-    border:none;
-    background-color:#BCD581 ;
-    width: 80hv;
-}
-
-#tituloEnvio{
-    display: flex;
-    font-size: 30px;
-    color: #4b57008e;
-    align-items: center;
-}
-
-/*MEDIA INDEX*/
-
+/*MEDIA queries*/
 @media only screen and (max-width: 576px){
-    .navegador h1{
-        font-size: 200%;
-    }
-    .navegadorItemsLi{
-        font-size: 40%;
-        justify-content: flex-start;
-    }
-    .navegadorItemsLi:hover{
-        font-size: 38%;
-    }
-    .submenu{
-        width:100px;
-        position: absolute;
-    }
-    .submenuItems{
-        font-size: 35%;
-        position: relative;
-    }
-    .navegador img{
-        width: 100%;
-    }
     #titulo{
-        font-size: 95%;
+        font-size: 240%;
     }
     #titulo:hover{
-        font-size: 99%;
+        font-size: 245%;
     }
-    .navegador{
-        width: 100%;
+    .tituloTarjetas{
+        font-size: 240%;
     }
-    .fotosDestacadas{
-        width: 20%;
-    }
-    .fotosDestacadas:hover{
-        height: none;
-    }
-    .bottom{
-        font-size: 15px;
-        gap: 5%;
+    #textoFooter{
+        font-size: 40%;
     }
     #redes{
-        font-size: 15px;
-    }
-/*MEDIA QUIENES SOMOS*/
-    #tituloHistoria{
+        font-size: 20%;
+    }   #tituloHistoria{
         font-size: 150%;
     }
     #fotoHistoria{
-        width: 35%;
+        width: 45%;
     }
     .contenedorHistoria, h3{
-        font-size: 75%;
+        font-size: 80%;
     }
     .contenedorImg{
         justify-content: center;
@@ -703,20 +516,26 @@ pre{
     .fotosQuienesSomos:hover{
         width: 85%;
     }
-/*FIN QUIENES SOMOS*/
 /*MEDIA COLECCION*/
     .cuerpo{
-        width: 95%;
+        width: 90%;
     }
     #textoProductos{
         font-size: 70%;
-        margin: 0;
+        margin: auto;
     }
     .productos{
-        font-size: 40%;
+        flex-direction: row;
+        width: 85%;
+        margin: auto;
+        margin-left: 0;
+
     }
     .productosDos{
-        font-size: 60%;
+        flex-direction: row;
+        width: 85%;
+        margin: auto;
+        margin-left: 0;
     }
     .productosItems{
         width: 11vh;
@@ -729,61 +548,13 @@ pre{
     }
     .textoProductos{
         font-size: 70%;
-    }
-/*MEDIA AYUDA*/
-    #iconos{
-        width: 60%;
-        gap: 30px;
-    }
-    .preguntas{
-        width: 20vh;
-        height: 20vh;
-    }
-    .preguntas:hover{
-        width: 23vh;
-    }
-    #tituloPreg{
-        font-size: 10px;
-    }
-    .preguntas h3{
-        font-size: 10px;
-    }
-    .sucursales{
-        width: 20vh;
-        height: 20vh;
-    }
-    .sucursales:hover{
-        width: 23vh;
-    }
-    #tituloSucursal{
-        font-size: 10px;
-    }
-    .sucursales h3{
-        font-size: 10px;
-    }
-    .formaEnvio{
-        width: 20vh;
-        height: 20vh;
-    }
-    .formaEnvio:hover{
-        width: 23vh;
-    }
-    #tituloEnvio{
-        font-size: 10px;
-    }
-    .formaEnvio h3{
-        font-size: 10px;
-    }
-/*FIN AYUDA*/
-/*MEDIA TRABAJA CON NOS*/
+    } 
     pre{
-        width: 75%;
-        font-size: 75%;
+        width: 100%;
+        font-size: 80%;
+        margin: auto;
     }
-    .formulario{
-        width: 80vh;
 }
-}
-/*fin trabaja con nos*/
+
 
 
