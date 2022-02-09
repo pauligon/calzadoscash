@@ -1,0 +1,15 @@
+header{
+    nav{
+        background-color: map-get($colores , bg );
+        ul{
+            li{
+                a{
+                    color: map-get($colores , primario);
+                    &:hover{ 
+                        color: map-get($colores , hover);
+                    }
+                }
+            }
+        }
+    }
+}

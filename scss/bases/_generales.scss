@@ -14,4 +14,34 @@ body{
     "pie pie pie pie"
     ;
     }
-    
+    .encabezado{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        flex-direction: column;
+        grid-area:cabeza;
+    }
+    .cuerpo{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        margin-top:65px;
+        grid-area: cuerpo;
+    }
+    .bottom{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        background-color: #ddd1c7;
+        font-size: 30px;
+        font-family:'Merriweather', serif ;
+        align-items: center;
+        grid-area: pie;
+    }
+    h1{
+        color: map-get($colores , primario );
+        &:hover {
+            color: map-get($colores , hover )
+            }
+        }

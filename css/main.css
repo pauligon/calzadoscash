@@ -5,3 +5,84 @@
 body {
   display: grid;
   grid-template-areas: "cabeza cabeza cabeza cabeza" "cuerpo cuerpo cuerpo cuerpo" "cuerpo cuerpo cuerpo cuerpo" "cuerpo cuerpo cuerpo cuerpo" "cuerpo cuerpo cuerpo cuerpo" "pie pie pie pie"; }
+
+.encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-direction: column;
+  grid-area: cabeza; }
+
+.cuerpo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 65px;
+  grid-area: cuerpo; }
+
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #ddd1c7;
+  font-size: 30px;
+  font-family: 'Merriweather', serif;
+  align-items: center;
+  grid-area: pie; }
+
+h1 {
+  color: #6b3837; }
+  h1:hover {
+    color: #9d938e; }
+
+header nav {
+  background-color: #ddd1c7; }
+  header nav ul li a {
+    color: #6b3837; }
+    header nav ul li a:hover {
+      color: #9d938e; }
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center; }
+
+.textoLiquidacion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  transform: translate(-50%, -50%);
+  font-family: "Merriweather", serif;
+  font-size: 300%;
+  font-weight: bolder;
+  color: #9d938e;
+  text-decoration: underline; }
+
+#titulo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 450%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-top: 2%;
+  color: #6b3837;
+  font-weight: lighter;
+  margin-top: 20%;
+  transition: all 1s;
+  margin-bottom: 0; }
+
+.tituloTarjetas {
+  font-size: 390%;
+  font-weight: lighter;
+  color: #6b3837;
+  transition: all 1s;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+  .tituloTarjetas:hover {
+    color: #9d938e; }
+
+.bordeTarjeta {
+  gap: 10%; }

@@ -1,0 +1,45 @@
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.textoLiquidacion{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    font-family: $letraSecundaria;
+    font-size: 300%;
+    font-weight: bolder;
+    color: map-get($colores, hover );
+    text-decoration: underline;
+}
+#titulo{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 450%;
+    font-family: $letraPrincipal;
+    padding-top: 2%;
+    color: map-get($colores , primario );
+    font-weight: lighter;
+    margin-top: 20%;
+    transition: all 1s;
+    margin-bottom: 0;
+}
+.tituloTarjetas{
+    font-size: 390%;
+    font-weight: lighter;
+    color: map-get($colores, primario);
+    transition: all 1s;
+    font-family: $letraPrincipal;
+    &:hover{
+        color: map-get($colores, hover )
+    }
+}
+.bordeTarjeta{
+    gap: 10%;
+}
