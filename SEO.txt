@@ -1,0 +1,18 @@
+agregue en cada pagina del sitio, keywords y description acordes a cada una de las páginas (secciones)
+Modifique en todas las páginas los titulos para que se vea el nombre del negocio junto a lo que corresponde a cada página.
+ej: coleccion | CASH
+
+keywords index: inicio, zapatos, summersale, sale, ventas, comprar, HTML, CSS, sandalias, ofertas.
+description index: Calzados Cash, ofrece calzados de calidad y diseño. Desde hace más de 30 años, vistiendo a toda la familia.
+
+keywords trabaja con nosotros: trabajo, zapatos, ventas, comprar, HTML, CSS, sandalias, ofertas, CV, contacto.
+description trabaja con nosotros: Calzados Cash es una empresa que permanentemente busca crecer en el mercado, acá vas a poder enviarnos tus datos y CV.
+
+keywords quienes somos: nosotros, historia, quienes somos, zapatos,ventas, comprar, HTML, CSS, sandalias, ofertas.
+description quienes somos: Calzados Cash, es una empresa con larga trayectoria en la ciudad de Río Tercero, en esta página vas a encontrar toda nuestra historia.
+
+keywords colección: coleccion, temporada, shop, zapatillas, zapatos, summersale, sale, ventas, comprar, HTML, CSS, sandalias, ofertas.
+description colección: En calzados Cash, vas a encontrar una gran variedad de marcas, precios y modelos. Entra y encontrá toda nuestra colección en nuestra página.
+
+keywords ayuda: ayuda, informacion, envios, sucursales, zapatos, sale, ventas, comprar, HTML, CSS, sandalias, ofertas.
+description ayuda: Encontra acá toda la información necesaria para despejar todas tus dudas sobre como comprar en la web, tiempos y formas de envíos y mucho más.
