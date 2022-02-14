@@ -43,3 +43,13 @@
 .bordeTarjeta{
     gap: 10%;
 }
+
+.card-title{
+    font-family: $letraPrincipal;
+    font-size: 150%;
+    color: #000000;
+    transition: all 1s;
+    &:hover{
+        color: map-get($colores, primario)
+    }
+}
