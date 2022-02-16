@@ -10,4 +10,15 @@ $colores: (
     hoverWhatsapp: #25D366
 );
 
+%flex{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@mixin flexbox ( $direction, $justify){
+display:flex;
+justify-content: $direction;
+flex-direction: $justify;
+}
 

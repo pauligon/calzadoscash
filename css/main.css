@@ -31,17 +31,20 @@ body {
   align-items: center;
   grid-area: pie; }
 
+.bg {
+  background-color: #ddd1c7; }
+
 h1 {
   color: #6b3837; }
   h1:hover {
     color: #9d938e; }
 
-header nav {
-  background-color: #ddd1c7; }
-  header nav ul li a {
-    color: #6b3837; }
-    header nav ul li a:hover {
-      color: #9d938e; }
+.encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-direction: column;
+  grid-area: cabeza; }
 
 .contenedor {
   position: relative;
@@ -59,6 +62,14 @@ header nav {
   font-weight: bolder;
   color: #9d938e;
   text-decoration: underline; }
+
+.cuerpo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 65px;
+  grid-area: cuerpo; }
 
 #titulo {
   display: flex;
@@ -94,3 +105,73 @@ header nav {
   transition: all 1s; }
   .card-title:hover {
     color: #6b3837; }
+
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #ddd1c7;
+  font-size: 30px;
+  font-family: 'Merriweather', serif;
+  align-items: center;
+  grid-area: pie; }
+
+.itemsFooter {
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 65%;
+  transition: all 0,5s; }
+  .itemsFooter:hover {
+    color: #6b3837;
+    font-size: 70%; }
+
+#redes {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  padding: 2px;
+  font-size: 25px;
+  margin: 0; }
+
+#facebook {
+  color: #6b3837;
+  font-size: 80%;
+  transition: all 0,5s; }
+  #facebook:hover {
+    color: #3b5998;
+    font-size: 85%; }
+
+#instagram {
+  color: #6b3837;
+  font-size: 80%;
+  transition: all 0,5s; }
+  #instagram:hover {
+    color: #833AB4 font-size 85%; }
+
+#whatsapp {
+  color: #6b3837;
+  font-size: 80%;
+  transition: all 0,5s; }
+  #whatsapp:hover {
+    color: #25D366 font-size 85%; }
+
+#textoFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #6b3837;
+  font-size: 60%;
+  margin-bottom: 0; }
+
+.seccionesFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+.seccionesFooter, li, a {
+  text-decoration: none;
+  color: #6b3837;
+  font-size: 80%;
+  flex-direction: column;
+  margin-bottom: 8px;
+  margin-top: 10px; }

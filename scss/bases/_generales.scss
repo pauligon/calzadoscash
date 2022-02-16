@@ -39,9 +39,3 @@ body{
         align-items: center;
         grid-area: pie;
     }
-    h1{
-        color: map-get($colores , primario );
-        &:hover {
-            color: map-get($colores , hover )
-            }
-        }
