@@ -27,8 +27,7 @@
 }
 
 .contenedorHistoria,h3{
-    display: flex;
-    justify-content: center;
+    @extend %flex;
     align-items: center;
     font-size: 130%;
     width: 100%;
