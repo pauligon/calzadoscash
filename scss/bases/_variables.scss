@@ -4,14 +4,16 @@ $letraSecundaria: 'Merriweather', serif;
 $colores: (
     bg: #ddd1c7,
     primario: #6b3837,
+    secundario: #3F3B38,
     hover: #9d938e,
     hoverInstagram: #833AB4,
     hoverFacebook: #3b5998,
     hoverWhatsapp: #25D366,
     formularioHov: #BCD581,
     formulario: #EEEEEE,
-    formularioHovDos: #bcd581a1
-    
+    formularioHovDos: #bcd581a1,
+    bgBody: #F5F1EF,
+
 );
 
 %flex{

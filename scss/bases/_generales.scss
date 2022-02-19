@@ -4,6 +4,7 @@
 
 }
 body{
+    background-color: map-get($colores, bgBody );
     display: grid;
     grid-template-areas:
     "cabeza cabeza cabeza cabeza"

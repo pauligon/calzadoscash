@@ -59,28 +59,30 @@
         </div>
         </nav>
     </header>
-    <main class="cuerpo" >
-        <pre>Somos una empresa en crecimiento, en busqueda permanente de mejorar y crecer junto a nuestra gente. 
-                                        Si queres formar parte de nuestro equipo dejanos tu CV acá:</pre>
-        <form action="./send.php" enctype="multipart/form-data" class="formulario w-100  bg-opacity-25">
-            <div class="formularioNombre">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre">
-            </div>
-            <div class="formularioApellido">
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido">
-            </div>
-            <div class="formularioEmail">
-                <label for="emailcv">Email:</label>
-                <input type="email" id="emailcv">
-            </div>
-            <div class="formularioCv">
-                <label>Adjuntar cv</label>
-                <input type="file" name="archivo" accept=".pdf">
-            </div>
-            <input type="button" value="submit" id="botonform">
-        </form>
+    <main class="cuerpo cuerpoTrabaja" >
+        <section class="contenedorTrabajo">
+            <img class="fotoTrabaja" src="../imagenes/trabajaconnos.jpg" alt="foto chica en cuarto empapelado de diarios">
+            <form action="./send.php" enctype="multipart/form-data" class="formulario w-100  bg-opacity-25">
+                <p class="textFormu">PONETE EN CONTACTO</p>
+                <div class="formularioNombre">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre">
+                </div>
+                <div class="formularioApellido">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido">
+                </div>
+                <div class="formularioEmail">
+                    <label for="emailcv">E-mail:</label>
+                    <input type="email" id="emailcv">
+                </div>
+                <div class="formularioCv">
+                    <label>Adjuntar cv</label>
+                    <input type="file" name="archivo" accept=".pdf">
+                </div>
+                    <input type="button" value="enviar" id="botonform">
+            </form>
+        </section>
     </main>
     <footer class="bottom">
         <div id="redes"> 

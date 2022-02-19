@@ -4,3 +4,8 @@
     width: 100%;
     margin-bottom: 10px;
 }
+
+.card{
+    -webkit-box-shadow: inset -1px 3px 8px 5px #676862, 2px 5px 16px 0px #4d535a, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: inset -1px 3px 8px 5px #676862, 2px 5px 16px 0px #4d4f52, 5px 5px 15px 5px rgba(0,0,0,0);
+}

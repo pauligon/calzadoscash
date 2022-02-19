@@ -1,0 +1,76 @@
+@media only screen and (max-width: 576px){
+    #titulo{
+        font-size: 240%;
+        &:hover{
+            font-size: 245%;
+        }
+    }
+    .tituloTarjetas{
+        font-size: 240%;
+    }
+    #textoFooter{
+        font-size: 40%;
+    }
+    #redes{
+        font-size: 20%;
+    }   
+    #tituloHistoria{
+        font-size: 150%;
+    }
+    #fotoHistoria{
+        width: 45%;
+    }
+    .contenedorHistoria, h3{
+        font-size: 80%;
+    }
+    .contenedorImg{
+        justify-content: center;
+    }
+    .fotosQuienesSomos{
+        width: 90%;
+        margin-left: 0;
+    }
+    .fotosQuienesSomos:hover{
+        width: 85%;
+    }
+/*MEDIA COLECCION*/
+    .cuerpo{
+        width: 90%;
+    }
+    #textoProductos{
+        font-size: 70%;
+        margin: auto;
+    }
+    .productos{
+        flex-direction: row;
+        width: 85%;
+        margin: auto;
+        margin-left: 0;
+    }
+    .productosDos{
+        flex-direction: row;
+        width: 85%;
+        margin: auto;
+        margin-left: 0;
+    }
+    .productosItems{
+        width: 11vh;
+    }
+    .fotoColeccion{
+        width: 70%;
+    }
+    .fotoColeccion:hover{
+        width: 73%;
+    }
+    .textoProductos{
+        font-size: 70%;
+    } 
+.contenedorTrabajo{
+    font-size: 80%;
+    width: 100%;
+    flex-direction: column;
+    }
+.textFormu{
+    font-size: 200% ;
+    }
+}
